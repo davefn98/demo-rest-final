@@ -1,4 +1,6 @@
 package com.mitocode.service;
 
-public interface IEstudianteService {
+import com.mitocode.model.Estudiante;
+
+public interface IEstudianteService extends ICRUD<Estudiante, Integer>{
 }

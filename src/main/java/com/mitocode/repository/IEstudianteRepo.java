@@ -1,4 +1,6 @@
 package com.mitocode.repository;
 
-public interface IEstudianteRepo {
+import com.mitocode.model.Estudiante;
+
+public interface IEstudianteRepo extends IGenericRepo<Estudiante, Integer>{
 }

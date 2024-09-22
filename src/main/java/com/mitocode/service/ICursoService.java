@@ -1,4 +1,10 @@
 package com.mitocode.service;
 
-public interface ICursoService {
+import com.mitocode.model.Curso;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+public interface ICursoService extends ICRUD<Curso, Integer>{
+
+    Page<Curso> getPage(Pageable pageable);
 }

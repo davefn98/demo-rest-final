@@ -9,17 +9,23 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Course {
+public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(nullable = false, length = 50)
     private String nombre;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 3)
     private String siglas;
 
     @Column(nullable = false)
     private boolean estado;
+
+    public Curso(String nombre, String siglas, boolean estado) {
+        this.nombre = nombre;
+        this.siglas = siglas;
+        this.estado = estado;
+    }
 }
