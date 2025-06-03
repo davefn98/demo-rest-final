@@ -1,4 +1,4 @@
-package com.mitocode.dto;
+package com.tcs.dto;
 
 import java.util.List;
 
